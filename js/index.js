@@ -87,5 +87,5 @@ contactInfo[0].textContent = siteContent['contact']['address'];
 contactInfo[1].textContent = siteContent['contact']['phone'];
 contactInfo[2].textContent = siteContent['contact']['email'];
 
-let footerInfo = document.querySelector('.footer p');
+let footerInfo = document.querySelector('footer');
 footerInfo.textContent = siteContent['footer']['copyright'];
