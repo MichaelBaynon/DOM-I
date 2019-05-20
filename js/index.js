@@ -79,5 +79,13 @@ title.innerHTML = 'DOM <br> IS <br> AWESOME'
 const midImg = document.querySelector('#middle-img');
 midImg.src = 'img/mid-page-accent.jpg'
 
-let footerTitle = document.querySelector('.contact');
-footerTitle.textContent = siteContent['contact']['contact-h4']
+let footerTitle = document.querySelector('.contact h4');
+footerTitle.textContent = siteContent['contact']['contact-h4'];
+
+const contactInfo = document.querySelectorAll('.contact p');
+contactInfo[0].textContent = siteContent['contact']['address'];
+contactInfo[1].textContent = siteContent['contact']['phone'];
+contactInfo[2].textContent = siteContent['contact']['email'];
+
+let footerInfo = document.querySelector('.footer p');
+footerInfo.textContent = siteContent['footer']['copyright'];
